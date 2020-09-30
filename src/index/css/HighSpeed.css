@@ -1,0 +1,10 @@
+.high-speed{
+    height:42px; width: 100%;
+    line-height: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+/* .high-speed .switch-btn{
+    flex:1;
+} */

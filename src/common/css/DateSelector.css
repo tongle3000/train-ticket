@@ -1,0 +1,61 @@
+.date-select{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.date-select .bd{
+    position: relative;
+    top: 42px;
+    /* width: 100%; */
+    padding:16px 10px;
+    background-color: #f0f0f0;
+    overflow-y: scroll;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table td, .data-table th{
+    border:solid 1px #ccc;
+    background-color: #fff;
+    padding:7px 0; text-align: center;
+    border-collapse: collapse;
+    font-weight: bold;
+    color:#666;
+}
+
+.data-table td:hover{ background-color:#1ba9ba; color:#fff;}
+
+.data-table thead .month{
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    margin:6px 0 0;
+}
+
+.data-table .disabled,.data-table .disabled:hover{
+    background-color: #eee;
+    color:#999;
+    font-weight: normal;
+}
+
+.data-table .weekend{
+    color:goldenrod;
+}
+.data-table .weekend:hover{
+    color: #fff;
+}
+.data-table .disabled.weekend:hover{
+    color:goldenrod;
+}
+
+.data-table .null,.data-table .null:hover{
+    background-color: #ddd;
+}

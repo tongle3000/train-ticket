@@ -1,0 +1,127 @@
+
+.city-selector{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+.city-select-box{
+    background-color: #1ba9ba;
+    height: 84px; overflow: hidden;
+}
+
+.searchbar{
+    position: fixed;
+    top: 42px;
+    background-color: #1ba9ba;
+    width: 100%;
+    height: 42px;
+}
+.search{
+    margin:2px 15px 8px;
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    left: 10px;
+    z-index: 10;
+    color: #999;
+    font-size: 16px;
+    height: 32px; line-height: 32px;
+
+}
+.search input{
+    padding:4px 10px;
+    border-radius: 5px;
+    border:0;
+    width: 100%;
+    
+    box-sizing: border-box;
+    font-size: 16px;
+    text-indent: 26px;
+
+}
+
+.serch-clean {
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+    color: #999;
+    font-size: 14px;
+    height: 32px; line-height: 32px;
+}
+
+/* 城市列表 */
+.all-city-list{position: relative; top: 0; overflow-y: scroll;}
+.city-list {
+    padding: 10px 0;
+}
+.city-ul{
+    
+}
+.city-li{
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    color:#444;
+}
+/* .city-li:last-child {border-bottom: 0;} */
+
+.city-li.title{
+    background-color: #eee;
+    margin-top: 10px;
+    color:#000;
+}
+.hot-city{
+    
+}
+.hot-city ul{
+    display: flex;display: -webkit-flex; /* Safari */
+    flex: 1;
+    flex-direction: row;
+    padding:0 7px 7px;
+    flex-wrap: wrap;
+}
+.hot-city li{
+    padding: 5px 36px; background-color: #eee;
+    margin: 0 7px 10px;
+    border-radius: 3px;
+    color:#444;
+}
+.hot-city .title{
+    padding: 10px 15px;
+}
+
+/* 字母列表 */
+.letter-list {
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    
+}
+.letter-list .letter {
+    width: auto;
+    font-size: 12px;
+    color: #1ba9ba;
+}
+.search-list {
+    display: flex;
+    position: absolute;
+    top: 84px;
+    flex:1;
+    width:100%;
+    z-index: 11;
+    background-color: #fff;
+}
+.search-list ul{width: 100%;}
+.search-list li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    color:#444;
+}

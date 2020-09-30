@@ -54,8 +54,22 @@ module.exports = {
   appPath: resolveApp('.'),
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
+
   appHtml: resolveApp('public/index.html'),
-  appIndexJs: resolveModule(resolveApp, 'src/index'),
+  // 修改路径 src/index => src/index/index
+  appIndexJs: resolveModule(resolveApp, 'src/index/index'),
+
+  // 增加
+  appQueryHtml: resolveApp('public/query.html'),
+  appTicketHtml: resolveApp('public/ticket.html'),
+  appOrderHtml: resolveApp('public/order.html'),
+
+  // 增加
+  appQueryJs: resolveModule(resolveApp, 'src/query/index'),
+  appTicketJs: resolveModule(resolveApp, 'src/ticket/index'),
+  appOrderJs: resolveModule(resolveApp, 'src/order/index'),
+
+
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),

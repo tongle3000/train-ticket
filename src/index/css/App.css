@@ -1,0 +1,17 @@
+
+
+.ant-row, .ant-row:after, .ant-row:before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    flex-direction: row 
+}
+.form{
+    padding:0 15px 10px;
+    background-color: #fff;
+}
+

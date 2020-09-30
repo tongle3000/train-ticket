@@ -1,0 +1,64 @@
+.train-list {
+    position: relative;
+    overflow-y: scroll;
+}
+
+.train-list ul{
+    padding: 0 15px;
+    margin:10px 0;
+}
+
+.train-list ul li a {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #eee;
+    padding:10px 0;
+    text-decoration: none;
+    color:#333;
+}
+.train-list span{ display: block; line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.train-list .small{font-size: 14px;color:#666;}
+.train-list .time {
+    padding-right:10px;
+}
+.train-list .city{
+    flex: 1;
+}
+
+.train-list .train-number{
+    flex: 1;
+}
+
+.train-list .price span {
+    color: chocolate;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.train-list .price span.small.none{
+    color:#888;
+}
+
+.train-list .shi-zhong {
+    font-size: 12px;
+    border: 1px solid #1BA9BE;
+    color: #1BA9BE;
+    border-radius: 40px;
+    font-style: normal;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 14px;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 3px;
+}
+.time-after {
+    color: red;
+    font-style: normal;
+    font-size: 12px;
+}

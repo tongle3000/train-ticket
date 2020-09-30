@@ -1,9 +1,12 @@
+import './index.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+import App from './redux/TodolistDispatchAction.jsx';
 import * as serviceWorker from './serviceWorker';
 
+// import App from './App.jsx';
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -15,3 +18,4 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+

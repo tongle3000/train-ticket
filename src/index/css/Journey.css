@@ -1,0 +1,31 @@
+.journey-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width:100%;
+    padding-top: 16px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.switch{flex-basis: 60px; text-align: center;}
+
+.switch button{margin:0 auto;margin:0 12px; border-radius: 100px; background-color: transparent;border:1px solid #999; outline: none;}
+
+.journey-wrapper input{
+    padding:10px 0;
+    border:0;
+    width:100%;
+    font-size: 18px;
+
+}
+
+.journey-station{
+    width: 100%;
+    overflow: hidden;
+    
+    border-bottom: 1px solid #999;
+    
+}

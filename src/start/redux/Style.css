@@ -1,0 +1,94 @@
+.todo-list {
+    width: 450px;
+    margin: 130px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 25px 50px 0 rgba(0,0,0,0.1);
+}
+
+.control{
+    width: 100%;
+    font-size:50px;
+    text-align: center;
+    color: rgba(175, 47,47, 0.15);
+}
+
+.control .submitBar{
+    position: relative;
+}
+
+.control .new-todo{
+    position: relative;
+    z-index: 1;
+    padding: 16px 16px 16px 20px;
+    border: 0;
+    outline: none;
+    font-size: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    /* margin: auto 10px; */
+    line-height: 1.4rm;
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.3);
+}
+
+.control .btn-submit {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    z-index: 10;
+    border: 0;
+    outline: none;
+    background-color: rgba(175, 47,47, 0.15);
+    padding:11px 20px;
+    font-size: 20px;
+}
+
+.todos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.todo-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 24px;
+    display: flex;
+    align-items:  center;
+}
+
+.todo-item input {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+}
+.todo-item label {
+    flex: 1;
+    padding: 15px;
+    padding-left: 0;
+    line-height: 1.2;
+    display: block;
+}
+
+.todo-item label.complete{ text-decoration: line-through;}
+
+.todo-item button {
+    border: 0;
+    outline: 0;
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #cc9a9a;
+    background: transparent;
+}
+
+.todo-item .yc {
+    display: none;
+}
+
+.todo-item button.del-btn-complete {
+    color:#cc9a9a;
+    display: block;
+}
