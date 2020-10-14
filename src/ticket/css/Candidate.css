@@ -1,0 +1,16 @@
+.candidate{margin-top:20px; background-color: #fff;}
+.candidate li {}
+.candidate li .bar{display: flex; border-bottom: 1px solid #eee;padding: 5px 16px;}
+.candidate li .bar span{display: inline-block;padding: 5px 15px}
+
+.candidate li .bar .price{ flex: 1;}
+
+.channels{
+    background-color:#fdedf0;
+    padding:10px 10px 20px 30px;
+}
+
+.channel h3{
+    margin: 10px 0;
+}
+.buy{ border: 1px solid red; color: red; background-color: #fff; padding:5px 10px;margin-top: 10px; border-radius: 6px; display: inline-block;}

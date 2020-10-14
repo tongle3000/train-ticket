@@ -56,6 +56,9 @@
 .botteom-all-selects .hd .reset {
     float: left;
     padding:10px 15px;
+    color: #1ba9ba;
+}
+.botteom-all-selects .hd .disabled {
     color: #666;
 }
 .botteom-all-selects .hd .ok {
@@ -119,12 +122,20 @@
     display: inline-block;
     top:-13px;
     margin-left:-13px;
+    /* 倒三角
+    width: 0;
+          height: 0;
+          border-right: 10px solid transparent;
+          border-left: 10px solid transparent;
+          border-top: 10px solid #1ba9ba; */
 }
 
 .slider-handle i{
     position: absolute;
-    top:-24px;
+    top:-30px;
     left:-50%;
+    margin-left:6px;
+     display: inline-block;
     font-style: normal;
     color:#666;
 }

@@ -56,9 +56,14 @@ export default {
     },
     highSpeed(state = false, action) {
         const { type, payload } = action;
+        let trainTypesChecked;
         switch(type) {
             case ACTION_SET_HIGH_SPEED:
                 return payload;
+
+            case ACTION_SET_TRAIN_TYPES_CHECKED:
+                trainTypesChecked = payload;
+                return Boolean(trainTypesChecked[1] && trainTypesChecked[5]);
             default:
         }
 
@@ -126,9 +131,24 @@ export default {
     },
     trainTypesChecked(state = {}, action) {
         const { type, payload } = action;
+
+        let highSpeed;
+        let newTrainTypesChecked;
         switch(type) {
             case ACTION_SET_TRAIN_TYPES_CHECKED:
                 return payload;
+            case ACTION_SET_HIGH_SPEED:
+                highSpeed = payload;
+                newTrainTypesChecked = {...state};
+
+                if(highSpeed) { // 如果选择 highSpeed
+                    newTrainTypesChecked[5] = true; // G-高速动车
+                    newTrainTypesChecked[1] = true; // D-动车组
+                } else {
+                    delete newTrainTypesChecked[5];
+                    delete newTrainTypesChecked[1];
+                }
+                return newTrainTypesChecked
             default:
         }
 

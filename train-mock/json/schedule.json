@@ -1,0 +1,26 @@
+[
+    {
+        "station": "北京",
+        "arriveTime": null,
+        "departTime": "07:20",
+        "stay": null
+    },
+    {
+        "station": "天津",
+        "arriveTime": "07: 54",
+        "departTime": "07: 59",
+        "stay": "5"
+    },
+    {
+        "station": "南京",
+        "arriveTime": "11:51",
+        "departTime": "07:24",
+        "stay": "3"
+    },
+    {
+        "station": "上海虹桥",
+        "arriveTime": "13:08",
+        "departTime": "13:10",
+        "stay": "2"
+    }
+]

@@ -2,7 +2,7 @@ import '../common/css/common.css';
 import './css/App.css';
 
 import dayjs from 'dayjs';
-import React, { useCallback, useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import URI from 'urijs';
@@ -11,6 +11,7 @@ import Header from '../common/Header';
 import Nav from '../common/Nav';
 import { h0 } from '../common/unitls';
 import useNav from '../common/useNav';
+import useOnback from '../common/useOnback';
 import useSize from '../common/useSize';
 import {
     nextDepartDate,
@@ -75,9 +76,7 @@ function App(props) {
 
     } = props;
 
-    const onBack = useCallback(() => {
-        window.history.back();
-    }, []);
+    const {onBack} = useOnback();
 
     // 解析 index 提交搜索后, 提交过来的数据, 使用副作用; 它是字符串,自己写比较困难, 使用第三方库 urijs;
     useEffect(() => {
@@ -133,7 +132,7 @@ function App(props) {
             .toString(); // 返回字符串的 url; 赋值给 url 对象;
             
         // console.log('departDate', dayjs(departDate).format("YYYY-MM-DD"));
-
+                // console.log(url)
         // 下面真正发起异步请求 fetch
         fetch(url)
             .then((res) => res.json())

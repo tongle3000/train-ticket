@@ -64,7 +64,7 @@ const ListItem = memo(function ListItem(props) {
 
 
 const List = memo(function List(props) {
-    const { trainList, orderType } = props;
+    const { trainList } = props;
     const { sizeHeight } = props;
 
     return (

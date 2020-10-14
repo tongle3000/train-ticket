@@ -6,6 +6,9 @@ const data1 = require('./json/query2020-09-27.json');
 const data2 = require('./json/query2020-09-28.json');
 const data3 = require('./json/query2020-09-29.json');
 const citys = require('./json/citys.json');
+const ticket =require('./json/ticket.json');
+const schedule = require('./json/schedule.json');
+const order = require('./json/order.json');
 
 app.get('/', (request, response) => {
     response.status(200);
@@ -26,6 +29,23 @@ app.get('/rest/citys', (request, response) => {
 app.get('/rest/query', (request, response) => {
   response.json(data)
 })
+
+app.get('/rest/ticket', (request, response) => {
+  response.json(ticket)
+})
+
+app.get('/rest/schedule', (request, response) => {
+  response.json(schedule)
+})
+
+app.get('/rest/order', (request, response) => {
+  response.json(order)
+})
+
+
+
+
+
 
 app.get('/rest/query2020-09-27', (request, response) => {
   response.json(data1)

@@ -1,0 +1,15 @@
+.details{
+    display: flex;
+    padding:20px 16px;
+    text-align: center;
+    background-color: #fff;
+}
+.details .middle{ flex: 1;}
+
+.details .skb{
+    color: #1ba9ba;
+    font-weight: bold;
+    font-size: 14px;
+}
+.details p{padding:0; margin:0 0 5px;}
+.details .haoshi {font-size: 14px;}

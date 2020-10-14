@@ -24,6 +24,7 @@
 .train-list .small{font-size: 14px;color:#666;}
 .train-list .time {
     padding-right:10px;
+    min-width: 60px;
 }
 .train-list .city{
     flex: 1;

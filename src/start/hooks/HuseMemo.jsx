@@ -41,4 +41,4 @@ function HuseMemo() {
         )
 }
 
-export default  HuseMemo;
+export default HuseMemo;
